@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+<<<<<<< HEAD
     font-family: sans-serif;
 }
 body{
@@ -9,16 +10,76 @@ body{
 }
 a{
     color: black;
+=======
+    
+}
+html,body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.7em;
+}
+a{
+    color: #333;
+>>>>>>> 94787fd1769f8a71485a0960edc56c9ab7c4888c
     text-decoration: none;
 }
 h1,h3{
     padding-bottom: 20px;
+<<<<<<< HEAD
 }
 p{
     margin: 10px 0;
 }
 #navbar{
     background: #82f77e;
+=======
+    
+}
+i {
+    margin-right: 10px;
+  }
+
+p{
+    margin: 10px 0;
+}
+/* kan använda var som helst*/
+.container{
+    margin: auto;
+    max-width: 1100px;
+    overflow: auto;
+    padding: 0 20px;
+}
+.text-primary{
+    color: #f7c08a;
+}
+.lead{
+    font-size: 20px;
+}
+.btn{
+    display:inline-block;
+    font-size: 18px;
+    color: #fff;
+    background: #333;
+    padding: 13px 20px;
+    border: none;
+    cursor: pointer;
+
+}
+.btn:hover{
+background: #f7c08a;
+color: #333;
+}
+
+.btn-light{
+    background: #f4f4f4;
+    color: #333;
+}
+.bg-dark{
+    background: #333;
+    color: #fff;
+}
+#navbar{
+    background:#333;
+>>>>>>> 94787fd1769f8a71485a0960edc56c9ab7c4888c
     color: #fff;
     overflow: auto;
 }
@@ -31,7 +92,11 @@ p{
 }
 #navbar ul{
     list-style: none;
+<<<<<<< HEAD
     float: right;
+=======
+    float:  right;
+>>>>>>> 94787fd1769f8a71485a0960edc56c9ab7c4888c
 }
 #navbar ul li{
     float: left;
@@ -41,6 +106,47 @@ p{
     padding: 20px;
     text-align: center;
 }
+<<<<<<< HEAD
 #navbar ul li a:hover{
     background: yellow;
+=======
+#navbar ul li a:hover,
+#navbar ul li a.current{
+    background: #444;
+    color: #f7c08a;
+}
+#showcase{
+    background: url('/img/ailbhe-flynn-jkZs3Oi9pq0-unsplash.jpg') no-repeat center center/cover;
+    height: 600px;
+}
+#showcase .showcase-content{
+    color: #fff;
+    text-align: center;
+    padding-top: 170px;
+}
+#showcase .showcase-content h1{
+    font-size: 60px;
+    line-height: 1.2em;
+}
+#showcase .showcase-content p{
+   padding-bottom: 20px;
+   line-height: 1.7em;
+}
+#web-info{
+    height: 400px;
+}
+#web-info .info-img{
+    float: left;
+    width: 50%;
+    background:url('/img/farid-askerov-F1uKnHlRzDc-unsplash.jpg') no-repeat;
+    min-height: 100%;
+}
+#web-info .info-text{
+    float: right;
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    padding: 50px 30px;
+    overflow: hidden;
+>>>>>>> 94787fd1769f8a71485a0960edc56c9ab7c4888c
 }
