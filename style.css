@@ -83,7 +83,7 @@ color: #333;
     float: left;
 }
 #navbar ul li a{
-    display: block;
+   display: block;
     padding: 20px;
     text-align: center;
 }
@@ -128,9 +128,40 @@ color: #333;
     padding: 50px 30px;
     overflow: hidden;
 }
-#main-footer{
-    text-align: center;
-    background: #333;
-    color: #fff;
+.copyright {
     padding: 20px;
-}
+    text-align: center;
+    color: #333;
+    background:#f7c08a;
+  }
+  
+
+  
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    margin: 5px 2px;
+    border-radius: 50%;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  
+  .fa-facebook {
+    background: #333;
+    color: #f7c08a;
+  }
+    
+  .fa-linkedin {
+    background: #333;
+    color: #f7c08a;
+  }
+  
+  
+  .fa-instagram {
+    background: #333;
+    color: #f7c08a;
+  }
+
