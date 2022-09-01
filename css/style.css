@@ -2,36 +2,19 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-<<<<<<< HEAD
-    font-family: sans-serif;
-}
-body{
-    line-height: 1.7em;
-}
-a{
-    color: black;
-=======
     
 }
 html,body{
+    background: #333;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.7em;
 }
 a{
     color: #333;
->>>>>>> 94787fd1769f8a71485a0960edc56c9ab7c4888c
     text-decoration: none;
 }
 h1,h3{
     padding-bottom: 20px;
-<<<<<<< HEAD
-}
-p{
-    margin: 10px 0;
-}
-#navbar{
-    background: #82f77e;
-=======
     
 }
 i {
@@ -77,9 +60,11 @@ color: #333;
     background: #333;
     color: #fff;
 }
+.clr{
+    clear:both;
+}
 #navbar{
     background:#333;
->>>>>>> 94787fd1769f8a71485a0960edc56c9ab7c4888c
     color: #fff;
     overflow: auto;
 }
@@ -92,17 +77,13 @@ color: #333;
 }
 #navbar ul{
     list-style: none;
-<<<<<<< HEAD
-    float: right;
-=======
     float:  right;
->>>>>>> 94787fd1769f8a71485a0960edc56c9ab7c4888c
 }
 #navbar ul li{
     float: left;
 }
 #navbar ul li a{
-    display: block;
+   display: block;
     padding: 20px;
     text-align: center;
 }
@@ -115,6 +96,7 @@ color: #333;
     background: #444;
     color: #f7c08a;
 }
+
 #showcase{
     background: url('/img/ailbhe-flynn-jkZs3Oi9pq0-unsplash.jpg') no-repeat center center/cover;
     height: 600px;
@@ -140,6 +122,7 @@ color: #333;
     width: 50%;
     background:url('/img/farid-askerov-F1uKnHlRzDc-unsplash.jpg') no-repeat;
     min-height: 100%;
+    
 }
 #web-info .info-text{
     float: right;
@@ -148,5 +131,4 @@ color: #333;
     text-align: center;
     padding: 50px 30px;
     overflow: hidden;
->>>>>>> 94787fd1769f8a71485a0960edc56c9ab7c4888c
 }
