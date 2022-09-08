@@ -15,46 +15,21 @@
         <h1 class="logo"><i class="fa-solid fa-camera"></i>MUMINTROLLET</h1>
             <ul>
                 <li><a class="current" href="/html/index.html">Home</a></li>
-                <li><a href="/html/your-albums.html">Albums</a></li>
+                <li><a href="/html/your-albums.html">Your albums</a></li>
                 <li><a href="#">Sida2</a></li>
                 <li><a href="#">Rated albums</a></li>
             </ul>
           </div> 
         </nav>
-        
-          <div class="album-flexbox-holder">
-            <div class="album-flexbox">
-              <button class="btn"><i class="fa-solid fa-camera"></i>
+          <div id = "album-flexbox-holder" class="album-flexbox-holder">
+            <div id = "album-flexbox" class="album-flexbox">
+              <button class="btn" type="button" onclick="newAlbum()"><i class="fa-solid fa-camera"></i>
                 Lägg till album</button>
             </div>
-
-            <div class="album-flexbox">
-              <a href="../html/photoAlbum1.html">
-                <img src="../img/img1.jpg" alt="kamera">
-              </a>
-              <div class="beskrivning">kamera</div>
-            </div>
-            
-            <div class="album-flexbox">
-              <a href="../html/photoAlbum2.html">
-                <img src="../img/img9.jpg" alt="kamera">
-              </a>
-              <div class="beskrivning">färg</div>
-            </div>
-
-            <div class="album-flexbox">
-              <a href="../html/photoAlbum3.html">
-                <img src="../img/img5.jpg" alt="kamera">
-              </a>
-              <div class="beskrivning">kärlek</div>
-            </div>
-       
-            <div class="album-flexbox">
-              <a href="../html/photoAlbum4.html">
-                <img src="../img/img6.jpg" alt="kamera">
-              </a>
-              <div class="beskrivning">skönhet</div>
-            </div>
           </div>
-</body>
+        
+          <script src="/javascript/add-album.js"></script>
+        </body>    
+
+
 </html>
