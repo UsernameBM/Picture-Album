@@ -3,8 +3,8 @@ body{
 }
 
 .swiper {
-    width: 800px;
-    height: 700px;
+    width: 600px;
+    height: 600px;
     text-align: center;
   }
   
@@ -32,3 +32,5 @@ body{
     width: 100%;
     text-align: center;
   }
+
+  
