@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head id="head">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="/css/style1.css">
     <script src="https://kit.fontawesome.com/15b5132f39.js" crossorigin="anonymous"></script>
 </head>
-<body>
+<body id="body">
    <header>   
      <nav id="navbar">
         <div class="container">
@@ -21,32 +21,18 @@
             </ul>
           </div> 
         </nav>
-          <div class="album-flexbox-holder">
-            <div class="album-flexbox">
-              <button class="btn"><i class="fa-solid fa-camera"></i>
+          <div id = "album-flexbox-holder" class="album-flexbox-holder">
+            <div id = "album-flexbox" class="album-flexbox">
+              <button class="btn" type="button" onclick="newAlbum()"><i class="fa-solid fa-camera"></i>
                 Lägg till album</button>
             </div>
-            <div class="album-flexbox">
-              <img src="/img/ailbhe-flynn-jkZs3Oi9pq0-unsplash.jpg">
-            </div>
-            <div class="album-flexbox">
-              <img src="/img/ailbhe-flynn-jkZs3Oi9pq0-unsplash.jpg">
-            </div>
-            <div class="album-flexbox">
-              <img src="/img/ailbhe-flynn-jkZs3Oi9pq0-unsplash.jpg">
-            </div>
-            <div class="album-flexbox">
-              <img src="/img/hardtoswallowpill1.jpg">
-            </div>
-            <div class="album-flexbox">
-              <img src="/img/annie-spratt-ogDort6vKuE-unsplash.jpg">
-            </div>
-
           </div>
         
-        
+          <script src="/javascript/add-album.js"></script>
+          <script src="/javascript/add-picture.js"></script>
 
-        
 
-</body>
+        </body>    
+
+
 </html>
