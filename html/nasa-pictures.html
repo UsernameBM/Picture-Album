@@ -44,17 +44,24 @@
     </header>
     <div class="album-flexbox-holder" id="album-flexbox-holder">
         <div class="album-flexbox">
-        <img src="/img/0301627~orig.jpg">
+          <img class="img-fluid"  src="../img/8913468~small.jpg" onclick="Fullview(this.src)" />
+        <div id="FullImageView">
+          <img id="FullImage"/>
+          <span id="CloseButton" onclick="CloseFullView()">&times;</span>
+        </div>
+      </div>
+
+
+      <div class="album-flexbox">
+        <img src="/img/0700064~orig.jpg"  onclick="Fullview(this.src)" />
       </div>
       <div class="album-flexbox">
-        <img src="/img/0700064~orig.jpg">
+        <img src="/img/8913467~orig.jpg" onclick="Fullview(this.src)"/>
       </div>
       <div class="album-flexbox">
-        <img src="/img/8913467~orig.jpg">
-      </div>
-      <div class="album-flexbox">
-        <img src="/img/8913468~orig.jpg">
+        <img src="/img/8913468~orig.jpg" onclick="Fullview(this.src)"/>
       </div>
       </div>
+      <script src="../javascript/rating.js"></script>
 </body>
 </html>
