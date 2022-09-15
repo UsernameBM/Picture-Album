@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nasa Pictures</title>
+    <link rel="stylesheet" href="/css/style1.css">
+    <link rel="stylesheet" href="/css/Nasa-style.css">
+    <link rel="stylesheet" href="/css/ThreeDotsDropDownBar.css">
+    <script src="https://kit.fontawesome.com/15b5132f39.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+    <nav id="navbar">
+        <div class="container">
+        <h1 class="logo"><i class="fa-solid fa-camera"></i>MUMINTROLLET</h1>
+            <ul>
+                <li><a class="current" href="/html/index.html">Home</a></li>
+                <li><a href="/html/your-albums.html">Your albums</a></li>
+                <li><a href="#">Sida2</a></li>
+                <li><a href="#">Rated albums</a></li>
+            </ul>
+          </div> 
+        </nav>
+        <div class="header">
+
+          <!-- three dot menu -->
+          <div class="dropdown">
+              <!-- three dots -->
+              <ul class="dropbtn icons btn-right showLeft" onclick="showDropdown()">
+                  <li></li>
+                  <li></li>
+                  <li></li>
+              </ul>
+              <!-- menu -->
+              <div id="myDropdown" class="dropdown-content">
+                  <a href="#edit">Edit</a>
+                  <a href="#add-picture">Add picture</a>
+                  <a href="#delete">Delete album</a>
+              </div>
+          </div>
+        </div>
+    </header>
+
+    
+    <div class="album-flexbox-holder" id="album-flexbox-holder">
+        <div class="album-flexbox">
+          <img src="../img/8913468~small.jpg" onclick="Fullview(this.src)" />
+        </div>
+        <div id="FullImageView">
+          <img id="FullImage"/>
+          <span id="CloseButton" onclick="CloseFullView()">&times;</span>
+        </div>
+     
+        
+
+
+
+
+
+      <div class="album-flexbox">
+        <img src="/img/0700064~orig.jpg"   onclick="Fullview(this.src)" />
+      </div>
+     
+
+      <div class="album-flexbox">
+        <img src="../img/8913467~orig.jpg" onclick="Fullview(this.src)" />
+      </div>
+
+
+      <div class="album-flexbox">
+        <img src="/img/0301627~orig.jpg" onclick="Fullview(this.src)"/>
+      </div>
+      
+      <div class="album-flexbox">
+        <img src="../img/GSFC_20171208_Archive_e000117~orig.jpg" onclick="Fullview(this.src)" />
+      </div>
+
+      <div class="album-flexbox">
+        <img src="../img/GSFC_20171208_Archive_e000226~orig.jpg" onclick="Fullview(this.src)" />
+      </div>
+
+      <div class="album-flexbox">
+        <img src="../img/8913467~orig.jpg" onclick="Fullview(this.src)" />
+      </div>
+
+      </div>
+      <script src="../javascript/rating.js"></script>
+</body>
+</html>
