@@ -159,8 +159,6 @@ p {
 	cursor: pointer;
 }
 
-<<<<<<< HEAD
-=======
 .up-btn {
 	position: absolute;
 	opacity: 0.6;
@@ -217,4 +215,3 @@ form .form_btn:hover {
 }
 .title, .comment
  { margin-left: 40px; }
->>>>>>> 0683e88023abef3a0f85c75dd1fd2a5eb19f52e7
