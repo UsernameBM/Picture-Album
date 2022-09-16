@@ -5,13 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nasa Pictures</title>
-    <link rel="stylesheet" href="/css/style1.css">
     <link rel="stylesheet" href="/css/Nasa-style.css">
     <link rel="stylesheet" href="/css/ThreeDotsDropDownBar.css">
     <script src="https://kit.fontawesome.com/15b5132f39.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
+    
     <nav id="navbar">
         <div class="container">
         <h1 class="logo"><i class="fa-solid fa-camera"></i>MUMINTROLLET</h1>
@@ -41,26 +40,36 @@
               </div>
           </div>
         </div>
-    </header>
+    
     <div class="album-flexbox-holder" id="album-flexbox-holder">
-        <div class="album-flexbox">
-          <img class="img-fluid"  src="../img/8913468~small.jpg" onclick="Fullview(this.src)" />
-        <div id="FullImageView">
+        <div class="album-flexbot">
+          <img class="img-fluid" width="30%" src="../img/8913468~small.jpg" onclick="Fullview(this.src)" />
+        <div id="overlay" class="overlay">
+            <div id="text"class="text">The team HQ</div>
+        </div>
+          <div id="FullImageView">
           <img id="FullImage"/>
           <span id="CloseButton" onclick="CloseFullView()">&times;</span>
         </div>
       </div>
-
-
-      <div class="album-flexbox">
-        <img src="/img/0700064~orig.jpg"  onclick="Fullview(this.src)" />
-      </div>
-      <div class="album-flexbox">
-        <img src="/img/8913467~orig.jpg" onclick="Fullview(this.src)"/>
-      </div>
-      <div class="album-flexbox">
-        <img src="/img/8913468~orig.jpg" onclick="Fullview(this.src)"/>
-      </div>
+      <div class="album-flexbot">
+        <img class="galaxy" src="/img/0700064~orig.jpg"  onclick="Fullview(this.src)" />
+        <div id="overlay" class="overlay">
+            <div id="text"class="text">Ring</div>
+        </div>
+    </div>
+      <div class="album-flexbot">
+        <img class="galaxy" src="/img/8913467~orig.jpg" onclick="Fullview(this.src)"/>
+        <div id="overlay" class="overlay">
+            <div id="text"class="text">nasa</div>
+        </div>
+    </div>
+      <div class="album-flexbot">
+        <img class="galaxy" src="/img/8913468~orig.jpg" />
+       <!-- <div id="overlay" class="overlay">
+            <div id="text"class="text">The team Low res</div>
+        </div>-->
+    </div>
       </div>
       <script src="../javascript/rating.js"></script>
 </body>
