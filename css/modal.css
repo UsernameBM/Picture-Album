@@ -1,9 +1,6 @@
-body{
-	background: #444;
-}
 .modal_box {
 	font-family: 'segoe ui';
-	display: none; 
+	display: none;
 	position: fixed;
 	z-index: 1;
 	left: 0;
@@ -15,7 +12,7 @@ body{
 }
 
 .modal_content {
-	background-color: #f7c08a;
+	background-color: #f4f4f4;
 	margin: 10% auto;
 	padding: 20px;
 	width: 60%;
@@ -60,30 +57,4 @@ form .form_btn:hover {
 		width: 100%;
 		border-radius: 0px;
 	}
-}
-
-#FullImageView{
-	display: none;
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	text-align: center;
-	
-}
-#FullImage{
-	padding: 24px;
-	max-width: 98%;
-	max-height: 98%;
-
-}
-
-#CloseButton{
-	position: absolute;
-	top: 12px;
-	right: 120px;
-	font-size: 3rem;
-	color: #f7c08a;
-	cursor: pointer;
 }
