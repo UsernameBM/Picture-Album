@@ -4,11 +4,12 @@ var albumHolder = document.querySelector('.album-flexbox-holder');
 //input.style.opacity = 0;
 input.addEventListener('change', createPictureList);
 
+
 function createPictureList() {
     
-    while(albumHolder.firstChild) {
-      albumHolder.removeChild(albumHolder.firstChild);
-    }
+  //  while(albumHolder.firstChild) {
+  //    albumHolder.removeChild(albumHolder.firstChild);
+  //  }
   
     const currentFiles = input.files;
     if (currentFiles.length === 0) {
@@ -17,18 +18,27 @@ function createPictureList() {
       albumHolder.appendChild(paragraph);
     } else {
      
+      let counter = localStorage.length;
+      console.log(counter);
+
       for (const file of currentFiles) {
+        const reader = new FileReader();
         let divElement = document.createElement("div");
         divElement.className='album-flexbox';
         const paragraph = document.createElement('p');
         
         paragraph.textContent = `File name ${file.name}, file size ${returnFileSize(file.size)}.`;
         const image = document.createElement('img');
-        image.src = URL.createObjectURL(file);
+
+        reader.readAsDataURL(file);
+        reader.onloadend = () => {
+        image.src = reader.result; 
+        localStorage.setItem(counter, reader.result); 
+        counter++;
         divElement.appendChild(image);
         divElement.appendChild(paragraph);
-         
         albumHolder.appendChild(divElement);
+        };
       }
     }
   }

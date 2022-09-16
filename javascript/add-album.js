@@ -1,3 +1,4 @@
+
 function newAlbum(){
     
     let divElement = document.createElement("div");
@@ -5,6 +6,17 @@ function newAlbum(){
     let imgElement = document.createElement("img");
     imgElement.className='img';
     imgElement.src = "/img/ailbhe-flynn-jkZs3Oi9pq0-unsplash.jpg";
+    
+    arrayForElements = [];
+        
+    if(arrayForElements.length){
+        console.log("vi kom in");
+        arrayForElements.foreach(addElement());
+    }
+    function addElement(value){
+        element.appendChild(value);
+    }
+    
 
     let buttonElement = document.createElement("button");
     buttonElement.className = "btn";
@@ -18,7 +30,7 @@ function newAlbum(){
     
     let element = document.getElementById("album-flexbox-holder");
     divElement.appendChild(buttonElement);
-
+    arrayForElements.push(divElement);
     element.appendChild(divElement);
     
 } 
