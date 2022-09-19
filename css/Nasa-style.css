@@ -196,5 +196,14 @@ form {
 form .form_btn:hover {
 	background-color: #dd8519;
 }
-.title, .comment
- { margin-left: 40px; }
+.title, .comment{ 
+	margin-left: 40px;
+ }
+
+ #clearStorage{
+	padding: 10px;
+	margin-left: 60px;
+	background-color: #f7c08a;
+	
+	
+ }
