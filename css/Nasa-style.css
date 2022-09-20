@@ -185,10 +185,6 @@ p {
 	cursor: pointer;
 }
 
-header button {
-	border: 1px solid black !important;
-}
-
 form {
 	margin-top: 60px;
 }
@@ -198,3 +194,10 @@ form .form_btn:hover {
 }
 .title, .comment
  { margin-left: 40px; }
+  .album-flexbox .checkbox{
+  position:absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 1;
+  opacity: 1;
+ }

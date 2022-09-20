@@ -7,7 +7,7 @@
 		<title>Nasa Pictures</title>
 		<link rel="stylesheet" href="/css/Nasa-style.css" />
 		<link rel="stylesheet" href="/css/stars.css" />
-		<link rel="stylesheet" href="/css/ThreeDotsDropDownBar.css" />
+		<link rel="stylesheet" href="/css/ThreeDotsDropDownBar.css">
 
 		<link
 			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
@@ -40,6 +40,11 @@
 				</div>
 			</nav>
 			<div class="header">
+				<div class="print-values">
+					<img src="" id="valueList" width="300" height="300" alt="">
+				</div>
+				<button disabled="true" id="buttonEnable" onclick="slideShowView()">View Checked As Slideshow</button>
+
 				<!-- three dot menu -->
 				<div class="dropdown">
 					<!-- three dots -->
@@ -61,7 +66,8 @@
 		<div class="album-flexbox-holder" id="album-flexbox-holder">
 			<div class="album-flexbox">
 				<span id="title1" class="title"></span>
-				<img src="../img/8913468~small.jpg" onclick="Fullview(this.src)" />
+				<img id="img1" src="../img/8913468~small.jpg" onclick="Fullview(this.src)" />
+				<input type="checkbox" class="checkbox" src="/img/8913468~small.jpg" value="one" id="check" onclick="enable()">
 				<button id="modalbtn1" class="up-btn">
 					<i class="fa fa-edit"></i>
 				</button>
@@ -82,7 +88,8 @@
 
 			<div class="album-flexbox">
 				<span id="title2" class="title"></span>
-				<img src="/img/0700064~orig.jpg" onclick="Fullview(this.src)" />
+				<img id="img2" src="/img/0700064~orig.jpg" onclick="Fullview(this.src)" />
+				<input type="checkbox" class="checkbox" id="check1" src="/img/0700064~orig.jpg" onclick="enable()">
 				<button id="modalbtn2" class="up-btn">
 					<i class="fa fa-edit"></i>
 				</button>
@@ -103,7 +110,8 @@
 
 			<div class="album-flexbox">
 				<span id="title3" class="title"></span>
-				<img src="../img/8913467~orig.jpg" onclick="Fullview(this.src)" />
+				<img id="img3" src="../img/8913467~orig.jpg" onclick="Fullview(this.src)" />
+				<input type="checkbox" class="checkbox" id="check2" onclick="enable()">
 				<button id="modalbtn3" class="up-btn">
 					<i class="fa fa-edit"></i>
 				</button>
@@ -124,7 +132,8 @@
 
 			<div class="album-flexbox">
 				<span id="title4" class="title"></span>
-				<img src="/img/0301627~orig.jpg" onclick="Fullview(this.src)" />
+				<img id="img4" src="/img/0301627~orig.jpg" onclick="Fullview(this.src)" />
+				<input type="checkbox" class="checkbox" id="check3" onclick="enable()">
 				<button id="modalbtn4" class="up-btn">
 					<i class="fa fa-edit"></i>
 				</button>
@@ -145,10 +154,8 @@
 
 			<div class="album-flexbox">
 				<span id="title5" class="title"></span>
-				<img
-					src="../img/GSFC_20171208_Archive_e000117~orig.jpg"
-					onclick="Fullview(this.src)"
-				/>
+				<img id="img5" src="../img/GSFC_20171208_Archive_e000117~orig.jpg" onclick="Fullview(this.src)"/>
+				<input type="checkbox" class="checkbox" id="check4" onclick="enable()">
 				<button id="modalbtn5" class="up-btn">
 					<i class="fa fa-edit"></i>
 				</button>
@@ -157,10 +164,10 @@
 
 			<div class="album-flexbox">
 				<span id="title6" class="title"></span>
-				<img
-					src="../img/GSFC_20171208_Archive_e000226~orig.jpg"
+				<img id="img6" src="../img/GSFC_20171208_Archive_e000226~orig.jpg"
 					onclick="Fullview(this.src)"
 				/>
+				<input type="checkbox" class="checkbox" id="check5" onclick="enable()">
 				<button id="modalbtn6" class="up-btn">
 					<i class="fa fa-edit"></i>
 				</button>
@@ -169,12 +176,14 @@
 
 			<div class="album-flexbox">
 				<span id="title7" class="title"></span>
-				<img src="../img/8913467~orig.jpg" onclick="Fullview(this.src)" />
+				<img id="img7" src="../img/8913467~orig.jpg" onclick="Fullview(this.src)" />
+				<input type="checkbox" class="checkbox" id="check6" onclick="enable()">
 				<button id="modalbtn7" class="up-btn">
 					<i class="fa fa-edit"></i>
 				</button>
 				<div><span id="comment7" class="comment"></span></div>
 			</div>
+    
 
 			<div id="FullImageView">
 				<img id="FullImage" />
@@ -208,5 +217,7 @@
 		</div>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 		<script src="../javascript/modal.js"></script>
+		<script src="/javascript/slideShow-enable.js"></script>
+		<script src="/javascript/show-in-slideshow.js"></script>
 	</body>
 </html>
