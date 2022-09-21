@@ -5,8 +5,8 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Nasa Pictures</title>
-		<link rel="stylesheet" href="/css/Nasa-style.css" />
-		<link rel="stylesheet" href="/css/stars.css" />
+		<link rel="stylesheet" href="../css/Nasa-style.css" />
+		<link rel="stylesheet" href="../css/stars.css" />
 		<link rel="stylesheet" href="/css/ThreeDotsDropDownBar.css" />
 
 		<link
@@ -62,12 +62,16 @@
 		<div class="album-flexbox-holder" id="album-flexbox-holder">
 			<div class="album-flexbox">
 				<span id="title1" class="title"></span>
-				<img src="../img/8913468~small.jpg" onclick="Fullview(this.src)" />
+				<img
+					id="img1"
+					src="../img/8913468~small.jpg"
+					onclick="Fullview(this)"
+				/>
 				<button id="modalbtn1" class="up-btn">
 					<i class="fa fa-edit"></i>
 				</button>
 				<div><span id="comment1" class="comment"></span></div>
-				<div class="rate">
+				<div id="rate1" class="rate">
 					<input
 						class="edit-star1"
 						type="radio"
@@ -113,12 +117,12 @@
 
 			<div class="album-flexbox">
 				<span id="title2" class="title"></span>
-				<img src="/img/0700064~orig.jpg" onclick="Fullview(this.src)" />
+				<img id="img2" src="/img/0700064~orig.jpg" onclick="Fullview(this)" />
 				<button id="modalbtn2" class="up-btn">
 					<i class="fa fa-edit"></i>
 				</button>
 				<div><span id="comment2" class="comment"></span></div>
-				<div class="rate">
+				<div id="rate2" class="rate">
 					<input
 						class="edit-star2"
 						type="radio"
@@ -164,12 +168,12 @@
 
 			<div class="album-flexbox">
 				<span id="title3" class="title"></span>
-				<img src="../img/8913467~orig.jpg" onclick="Fullview(this.src)" />
+				<img id="img3" src="../img/8913467~orig.jpg" onclick="Fullview(this)" />
 				<button id="modalbtn3" class="up-btn">
 					<i class="fa fa-edit"></i>
 				</button>
 				<div><span id="comment3" class="comment"></span></div>
-				<div class="rate">
+				<div id="rate3" class="rate">
 					<input
 						class="edit-star3"
 						type="radio"
@@ -215,12 +219,12 @@
 
 			<div class="album-flexbox">
 				<span id="title4" class="title"></span>
-				<img src="/img/0301627~orig.jpg" onclick="Fullview(this.src)" />
+				<img id="img4" src="/img/0301627~orig.jpg" onclick="Fullview(this)" />
 				<button id="modalbtn4" class="up-btn">
 					<i class="fa fa-edit"></i>
 				</button>
 				<div><span id="comment4" class="comment"></span></div>
-				<div class="rate">
+				<div id="rate4" class="rate">
 					<input
 						class="edit-star4"
 						type="radio"
@@ -267,20 +271,65 @@
 			<div class="album-flexbox">
 				<span id="title5" class="title"></span>
 				<img
+					id="img5"
 					src="../img/GSFC_20171208_Archive_e000117~orig.jpg"
-					onclick="Fullview(this.src)"
+					onclick="Fullview(this)"
 				/>
 				<button id="modalbtn5" class="up-btn">
 					<i class="fa fa-edit"></i>
 				</button>
 				<div><span id="comment5" class="comment"></span></div>
+
+				<div id="rate4" class="rate">
+					<input
+						class="edit-star4"
+						type="radio"
+						id="star25"
+						name="rate4"
+						value="5"
+					/>
+					<label for="star25" title="text">5 stars</label>
+					<input
+						class="edit-star5"
+						type="radio"
+						id="star24"
+						name="rate4"
+						value="4"
+					/>
+					<label for="star24" title="text">4 stars</label>
+					<input
+						class="edit-star5"
+						type="radio"
+						id="star23"
+						name="rate4"
+						value="3"
+					/>
+					<label for="star23" title="text">3 stars</label>
+					<input
+						class="edit-star5"
+						type="radio"
+						id="star22"
+						name="rate4"
+						value="2"
+					/>
+					<label for="star22" title="text">2 stars</label>
+					<input
+						class="edit-star5"
+						type="radio"
+						id="star21"
+						name="rate4"
+						value="1"
+					/>
+					<label for="star21" title="text">1 star</label>
+				</div>
 			</div>
 
 			<div class="album-flexbox">
 				<span id="title6" class="title"></span>
 				<img
+					id="img6"
 					src="../img/GSFC_20171208_Archive_e000226~orig.jpg"
-					onclick="Fullview(this.src)"
+					onclick="Fullview(this)"
 				/>
 				<button id="modalbtn6" class="up-btn">
 					<i class="fa fa-edit"></i>
@@ -290,7 +339,7 @@
 
 			<div class="album-flexbox">
 				<span id="title7" class="title"></span>
-				<img src="../img/8913467~orig.jpg" onclick="Fullview(this.src)" />
+				<img id="img7" src="../img/8913467~orig.jpg" onclick="Fullview(this)" />
 				<button id="modalbtn7" class="up-btn">
 					<i class="fa fa-edit"></i>
 				</button>
@@ -298,7 +347,62 @@
 			</div>
 
 			<div id="FullImageView">
+				<div>
+					<span id="full-title"></span>
+				</div>
+				<div id="full-rate" class="rate">
+					<input
+						disabled
+						class="edit-star5"
+						type="radio"
+						id="star05"
+						name="rate0"
+						value="5"
+					/>
+					<label for="star05" title="text">5 stars</label>
+					<input
+						disabled
+						class="edit-star5"
+						type="radio"
+						id="star04"
+						name="rate0"
+						value="4"
+					/>
+					<label for="star04" title="text">4 stars</label>
+					<input
+						disabled
+						class="edit-star5"
+						type="radio"
+						id="star03"
+						name="rate0"
+						value="3"
+					/>
+					<label for="star03" title="text">3 stars</label>
+					<input
+						disabled
+						class="edit-star5"
+						type="radio"
+						id="star02"
+						name="rate0"
+						value="2"
+					/>
+					<label for="star02" title="text">2 stars</label>
+					<input
+						disabled
+						class="edit-star5"
+						type="radio"
+						id="star01"
+						name="rate0"
+						value="1"
+					/>
+					<label for="star01" title="text">1 star</label>
+				</div>
 				<img id="FullImage" />
+				<div>
+					<span id="full-comment"></span>
+				</div>
+				
+
 				<span id="CloseButton" onclick="CloseFullView()">&times;</span>
 			</div>
 
@@ -331,4 +435,3 @@
 		<script src="/javascript/modal.js"></script>
 	</body>
 </html>
-

@@ -1,11 +1,26 @@
 function Fullview(ImgLink) {
-	document.getElementById('FullImage').src = ImgLink;
+	// Hitta ID för titel, kommentar och betyg som jag behöver för att visa på hela bilden
+	let num = ImgLink.id.slice(-1);
+	let titleId = 'title' + num;
+	let commentId = 'comment' + num;
+	let rateId = 'rate' + num;
+
+	// Ställa in titel, kommentar och betyg för full bildvy
+	$('#full-title').html($('#' + titleId)[0].innerHTML);
+	$('#full-comment').html($('#' + commentId)[0].innerHTML);
+	if (document.querySelector('input[name=' + rateId + ']:checked')) {
+		let rateSelected = document.querySelector(
+			'input[name=' + rateId + ']:checked'
+		).value;
+		document.getElementById('star0' + rateSelected).checked = true;
+	}
+
+	document.getElementById('FullImage').src = ImgLink.src;
 	document.getElementById('FullImageView').style.display = 'block';
 }
 function CloseFullView() {
 	document.getElementById('FullImageView').style.display = 'none';
 }
-
 $(document).ready(function () {
 	const modal = document.getElementById('simple-modal');
 	const editbtn = document.getElementsByClassName('editbtn')[0];
@@ -23,6 +38,7 @@ $(document).ready(function () {
 	$('.edit-star2').click(starClicked);
 	$('.edit-star3').click(starClicked);
 	$('.edit-star4').click(starClicked);
+	
 
 	function starClicked(event) {
 		console.log();
