@@ -7,14 +7,7 @@
 		<title>Nasa Pictures</title>
 		<link rel="stylesheet" href="/css/Nasa-style.css" />
 		<link rel="stylesheet" href="/css/stars.css" />
-		<link rel="stylesheet" href="/css/ThreeDotsDropDownBar.css" />
-
-		<link
-			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-			rel="stylesheet"
-			integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-			crossorigin="anonymous"
-		/>
+		<link rel="stylesheet" href="/css/ThreeDotsDropDownBar.css">
 
 		<link
 			rel="stylesheet"
@@ -40,6 +33,9 @@
 				</div>
 			</nav>
 			<div class="header">
+				
+
+			
 				<!-- three dot menu -->
 				<div class="dropdown">
 					<!-- three dots -->
@@ -50,135 +46,729 @@
 					</ul>
 					<!-- menu -->
 					<div id="myDropdown" class="dropdown-content">
-						<a href="#edit">Edit</a>
-						<a href="#add-picture">Add picture</a>
-						<a href="#delete">Delete album</a>
+						<button class="clearButton" type="button" id="clearStorage">Clear All</button>
 					</div>
 				</div>
 			</div>
+			<div class="slideContainer">
+				<div class="slideshowButtons">
+				<button class="buttons" id="buttonEnable" onclick="showSlideShow()">Slideshow View</button>
+				<button class="buttons" onclick="plusDivs(-1)">Prev</button>
+				<button class="buttons" onclick="plusDivs(1)">Next </button>
+				</div>
+				</div>
+			<div id="slideshow" class="slideshow">
+				<!--lägg till hur många bilder-->
+				</div>
+		
+				
 		</header>
+
+		
+
 		
 		<div class="album-flexbox-holder" id="album-flexbox-holder">
 			<div class="album-flexbox">
 				<span id="title1" class="title"></span>
-				<img src="../img/8913468~small.jpg" onclick="Fullview(this.src)" />
-				<button id="modalbtn1" class="up-btn">
+				<img id="1" src="/img/mumintrollet1.png" onclick="Fullview(this)"/>
+				<input type="checkbox" class="checkbox" id="check1">
+				<button id="1" class="up-btn">
 					<i class="fa fa-edit"></i>
 				</button>
-				<div><span id="comment1" class="comment"></span></div>
-				<div class="rate">
-					<input type="radio" id="star5" name="rate1" value="5" />
+				<div id="rate1" class="rate">
+					<input
+					class="edit-star1"
+					type="radio"
+					id="star5"
+					name="rate1"
+					value="5"
+					/>
 					<label for="star5" title="text">5 stars</label>
-					<input type="radio" id="star4" name="rate1" value="4" />
+					<input
+					class="edit-star1"
+					type="radio"
+					id="star4"
+					name="rate1"
+					value="4"
+					/>
 					<label for="star4" title="text">4 stars</label>
-					<input type="radio" id="star3" name="rate1" value="3" />
+					<input
+					class="edit-star1"
+					type="radio"
+					id="star3"
+					name="rate1"
+					value="3"
+					/>
 					<label for="star3" title="text">3 stars</label>
-					<input type="radio" id="star2" name="rate1" value="2" />
+					<input
+					class="edit-star1"
+					type="radio"
+					id="star2"
+					name="rate1"
+					value="2"
+					/>
 					<label for="star2" title="text">2 stars</label>
-					<input type="radio" id="star1" name="rate1" value="1" />
+					<input
+					class="edit-star1"
+					type="radio"
+					id="star1"
+					name="rate1"
+					value="1"
+					/>
 					<label for="star1" title="text">1 star</label>
+					<div><span id="comment1" class="comment"></span></div>
 				</div>
 			</div>
 
 			<div class="album-flexbox">
 				<span id="title2" class="title"></span>
-				<img src="/img/0700064~orig.jpg" onclick="Fullview(this.src)" />
-				<button id="modalbtn2" class="up-btn">
+				<img id="2" src="/img/mumintrollet2.png" onclick="Fullview(this)" />
+				<input type="checkbox" class="checkbox" id="check2">
+				<button id="2" class="up-btn">
 					<i class="fa fa-edit"></i>
 				</button>
-				<div><span id="comment2" class="comment"></span></div>
-				<div class="rate">
-					<input type="radio" id="star10" name="rate2" value="5" />
+				<div id="rate2" class="rate">
+					<input
+					class="edit-star2"
+					type="radio"
+					id="star10"
+					name="rate2"
+					value="5"
+					/>
 					<label for="star10" title="text">5 stars</label>
-					<input type="radio" id="star9" name="rate2" value="4" />
+					<input
+						class="edit-star2"
+						type="radio"
+						id="star9"
+						name="rate2"
+						value="4"
+					/>
 					<label for="star9" title="text">4 stars</label>
-					<input type="radio" id="star8" name="rate2" value="3" />
+					<input
+						class="edit-star2"
+						type="radio"
+						id="star8"
+						name="rate2"
+						value="3"
+					/>
 					<label for="star8" title="text">3 stars</label>
-					<input type="radio" id="star7" name="rate2" value="2" />
+					<input
+						class="edit-star2"
+						type="radio"
+						id="star7"
+						name="rate2"
+						value="2"
+					/>
 					<label for="star7" title="text">2 stars</label>
-					<input type="radio" id="star6" name="rate2" value="1" />
-					<label for="star6" title="text">1 star</label>
+					<input
+						class="edit-star2"
+						type="radio"
+						id="star6"
+						name="rate2"
+						value="1"
+						/>
+						<label for="star6" title="text">1 star</label>
+						<div><span id="comment2" class="comment"></span></div>
+					</div>
 				</div>
-			</div>
 
 			<div class="album-flexbox">
 				<span id="title3" class="title"></span>
-				<img src="../img/8913467~orig.jpg" onclick="Fullview(this.src)" />
-				<button id="modalbtn3" class="up-btn">
+				<img id="3" src="/img/mumintrollet3.png" onclick="Fullview(this)" />
+				<input type="checkbox" class="checkbox" id="check3">
+				<button id="3" class="up-btn">
 					<i class="fa fa-edit"></i>
 				</button>
-				<div><span id="comment3" class="comment"></span></div>
-				<div class="rate">
-					<input type="radio" id="star15" name="rate3" value="5" />
+				
+				<div id="rate3" class="rate">
+					<input
+						class="edit-star3"
+						type="radio"
+						id="star15"
+						name="rate3"
+						value="5"
+					/>
 					<label for="star15" title="text">5 stars</label>
-					<input type="radio" id="star14" name="rate3" value="4" />
+					<input
+						class="edit-star3"
+						type="radio"
+						id="star14"
+						name="rate3"
+						value="4"
+					/>
 					<label for="star14" title="text">4 stars</label>
-					<input type="radio" id="star13" name="rate3" value="3" />
+					<input
+						class="edit-star3"
+						type="radio"
+						id="star13"
+						name="rate3"
+						value="3"
+					/>
 					<label for="star13" title="text">3 stars</label>
-					<input type="radio" id="star12" name="rate3" value="2" />
+					<input
+						class="edit-star3"
+						type="radio"
+						id="star12"
+						name="rate3"
+						value="2"
+					/>
 					<label for="star12" title="text">2 stars</label>
-					<input type="radio" id="star11" name="rate3" value="1" />
+					<input
+						class="edit-star3"
+						type="radio"
+						id="star11"
+						name="rate3"
+						value="1"
+					/>
 					<label for="star11" title="text">1 star</label>
+					<div><span id="comment3" class="comment"></span></div>
 				</div>
 			</div>
 
 			<div class="album-flexbox">
 				<span id="title4" class="title"></span>
-				<img src="/img/0301627~orig.jpg" onclick="Fullview(this.src)" />
-				<button id="modalbtn4" class="up-btn">
+				<img id="4" src="/img/mumintrollet4.png" onclick="Fullview(this)" />
+				<input type="checkbox" class="checkbox" id="check4">
+				<button id="4" class="up-btn">
 					<i class="fa fa-edit"></i>
 				</button>
-				<div><span id="comment4" class="comment"></span></div>
-				<div class="rate">
-					<input type="radio" id="star20" name="rate4" value="5" />
+				<div id="rate4" class="rate">
+					<input class="edit-star4" type="radio" id="star20" name="rate4" value="5"/>
 					<label for="star20" title="text">5 stars</label>
-					<input type="radio" id="star19" name="rate4" value="4" />
+					<input class="edit-star4" type="radio" id="star19" name="rate4" value="4"/>
 					<label for="star19" title="text">4 stars</label>
-					<input type="radio" id="star18" name="rate4" value="3" />
+					<input class="edit-star4" type="radio" id="star18" name="rate4" value="3"/>
 					<label for="star18" title="text">3 stars</label>
-					<input type="radio" id="star17" name="rate4" value="2" />
+					<input class="edit-star4" type="radio" id="star17" name="rate4" value="2"/>
 					<label for="star17" title="text">2 stars</label>
-					<input type="radio" id="star16" name="rate4" value="1" />
-					<label for="star16" title="text">1 star</label>
+					<input class="edit-star4" type="radio" id="star16" name="rate4" value="1"/>
+				    <label for="star16" title="text">1 stars</label>
+						<div><span id="comment4" class="comment"></span></div>
 				</div>
 			</div>
 
 			<div class="album-flexbox">
 				<span id="title5" class="title"></span>
-				<img
-					src="../img/GSFC_20171208_Archive_e000117~orig.jpg"
-					onclick="Fullview(this.src)"
-				/>
-				<button id="modalbtn5" class="up-btn">
+				<img id="5" src="/img/mumintrollet5.png" onclick="Fullview(this)"/>
+				<input type="checkbox" class="checkbox" id="check5">
+				<button id="5" class="up-btn">
 					<i class="fa fa-edit"></i>
 				</button>
-				<div><span id="comment5" class="comment"></span></div>
+				
+				<div id="rate5" class="rate">
+					<input class="edit-star5" type="radio" id="star25" name="rate5" value="5"/>
+					<label for="star25" title="text">5 stars</label>
+					<input class="edit-star5" type="radio" id="star24" name="rate5" value="4"/>
+					<label for="star24" title="text">4 stars</label>
+					<input class="edit-star5" type="radio" id="star23" name="rate5" value="3"/>
+					<label for="star23" title="text">3 stars</label>
+					<input class="edit-star5" type="radio" id="star22" name="rate5" value="2"/>
+					<label for="star22" title="text">2 stars</label>
+					<input class="edit-star5" type="radio"id="star21" name="rate5" value="1"/>
+					<label for="star21" title="text">1 star</label>
+					<div><span id="comment5" class="comment"></span></div>
+				</div>
 			</div>
 
 			<div class="album-flexbox">
 				<span id="title6" class="title"></span>
-				<img
-					src="../img/GSFC_20171208_Archive_e000226~orig.jpg"
-					onclick="Fullview(this.src)"
-				/>
-				<button id="modalbtn6" class="up-btn">
+				<img id="6" src="/img/mumintrollet6.png" onclick="Fullview(this)"/>
+				<input type="checkbox" class="checkbox" id="check6">
+				<button id="6" class="up-btn">
 					<i class="fa fa-edit"></i>
 				</button>
-				<div><span id="comment6" class="comment"></span></div>
+				<div class="rate">
+					<input class="edit-star6" type="radio" id="star30" name="rate6" value="5" />
+					<label for="star30" title="text">5 stars</label>
+					<input class="edit-star6" type="radio" id="star29" name="rate6" value="4" />
+					<label for="star29" title="text">4 stars</label>
+					<input class="edit-star6" type="radio" id="star28" name="rate6" value="3" />
+					<label for="star28" title="text">3 stars</label>
+					<input class="edit-star6" type="radio" id="star27" name="rate6" value="2" />
+					<label for="star27" title="text">2 stars</label>
+					<input class="edit-star6" type="radio" id="star26" name="rate6" value="1" />
+					<label for="star26" title="text">1 star</label>
+					<div><span id="comment6" class="comment"></span></div>
+				</div>
 			</div>
 
 			<div class="album-flexbox">
 				<span id="title7" class="title"></span>
-				<img src="../img/8913467~orig.jpg" onclick="Fullview(this.src)" />
-				<button id="modalbtn7" class="up-btn">
+				<img id="7" src="/img/mumintrollet7.png" onclick="Fullview(this)" />
+				<input type="checkbox" class="checkbox" id="check7">
+				<button id="7" class="up-btn">
 					<i class="fa fa-edit"></i>
 				</button>
-				<div><span id="comment7" class="comment"></span></div>
+				<div class="rate">
+					<input class="edit-star7" type="radio" id="star35" name="rate7" value="5" />
+					<label for="star35" title="text">5 stars</label>
+					<input class="edit-star7" type="radio" id="star34" name="rate7" value="4" />
+					<label for="star34" title="text">4 stars</label>
+					<input class="edit-star7" type="radio" id="star33" name="rate7" value="3" />
+					<label for="star33" title="text">3 stars</label>
+					<input class="edit-star7" type="radio" id="star32" name="rate7" value="2" />
+					<label for="star32" title="text">2 stars</label>
+					<input class="edit-star7" type="radio" id="star31" name="rate7" value="1" />
+					<label for="star31" title="text">1 star</label>
+					<div><span id="comment7" class="comment"></span></div>
+				</div>
+			</div>
+
+			<div class="album-flexbox">
+				<span id="title8" class="title"></span>
+				<img id="8" src="/img/mumintrollet8.png" onclick="Fullview(this)" />
+				<input type="checkbox" class="checkbox" id="check8">
+				<button id="8" class="up-btn">
+					<i class="fa fa-edit"></i>
+				</button>
+				<div class="rate">
+					<input class="edit-star8" type="radio" id="star40" name="rate8" value="5" />
+					<label for="star40" title="text">5 stars</label>
+					<input class="edit-star8" type="radio" id="star39" name="rate8" value="4" />
+					<label for="star39" title="text">4 stars</label>
+					<input class="edit-star8" type="radio" id="star38" name="rate8" value="3" />
+					<label for="star38" title="text">3 stars</label>
+					<input class="edit-star8" type="radio" id="star37" name="rate8" value="2" />
+					<label for="star37" title="text">2 stars</label>
+					<input class="edit-star8" type="radio" id="star36" name="rate8" value="1" />
+					<label for="star36" title="text">1 star</label>
+					<div><span id="comment8" class="comment"></span></div>
+				</div>
+			</div>
+
+			<div class="album-flexbox">
+				<span id="title9" class="title"></span>
+				<img id="9" src="/img/mumintrollet9.png" onclick="Fullview(this)" />
+				<input type="checkbox" class="checkbox" id="check9">
+				<button id="9" class="up-btn">
+					<i class="fa fa-edit"></i>
+				</button>
+				<div class="rate">
+					<input class="edit-star9" type="radio" id="star45" name="rate9" value="5" />
+					<label for="star45" title="text">5 stars</label>
+					<input class="edit-star9" type="radio" id="star44" name="rate9" value="4" />
+					<label for="star44" title="text">4 stars</label>
+					<input class="edit-star9" type="radio" id="star43" name="rate9" value="3" />
+					<label for="star43" title="text">3 stars</label>
+					<input class="edit-star9" type="radio" id="star42" name="rate9" value="2" />
+					<label for="star42" title="text">2 stars</label>
+					<input class="edit-star9" type="radio" id="star41" name="rate9" value="1" />
+					<label for="star41" title="text">1 star</label>
+					<div><span id="comment9" class="comment"></span></div>
+				</div>
+			</div>
+
+			<div class="album-flexbox">
+				<span id="title10" class="title"></span>
+				<img id="10" src="/img/mumintrollet10.png" onclick="Fullview(this)" />
+				<input type="checkbox" class="checkbox" id="check10">
+				<button id="10" class="up-btn">
+					<i class="fa fa-edit"></i>
+				</button>
+				<div class="rate">
+					<input class="edit-star10" type="radio" id="star50" name="rate10" value="5" />
+					<label for="star50" title="text">5 stars</label>
+					<input class="edit-star10" type="radio" id="star49" name="rate10" value="4" />
+					<label for="star49" title="text">4 stars</label>
+					<input class="edit-star10" type="radio" id="star48" name="rate10" value="3" />
+					<label for="star48" title="text">3 stars</label>
+					<input class="edit-star10" type="radio" id="star47" name="rate10" value="2" />
+					<label for="star47" title="text">2 stars</label>
+					<input class="edit-star10" type="radio" id="star46" name="rate10" value="1" />
+					<label for="star46" title="text">1 star</label>
+					<div><span id="comment10" class="comment"></span></div>
+				</div>
+			</div>
+
+			<div class="album-flexbox">
+				<span id="title11" class="title"></span>
+				<img id="11" src="/img/mumintrollet11.png" onclick="Fullview(this)" />
+				<input type="checkbox" class="checkbox" id="check11">
+				<button id="11" class="up-btn">
+					<i class="fa fa-edit"></i>
+				</button>
+				<div class="rate">
+					<input class="edit-star11" type="radio" id="star55" name="rate11" value="5" />
+					<label for="star55" title="text">5 stars</label>
+					<input class="edit-star11" type="radio" id="star54" name="rate11" value="4" />
+					<label for="star54" title="text">4 stars</label>
+					<input class="edit-star11" type="radio" id="star53" name="rate11" value="3" />
+					<label for="star53" title="text">3 stars</label>
+					<input class="edit-star11" type="radio" id="star52" name="rate11" value="2" />
+					<label for="star52" title="text">2 stars</label>
+					<input class="edit-star11" type="radio" id="star51" name="rate11" value="1" />
+					<label for="star51" title="text">1 star</label>
+					<div><span id="comment11" class="comment"></span></div>
+				</div>
+			</div>
+
+			<div class="album-flexbox">
+				<span id="title12" class="title"></span>
+				<img id="12" src="/img/mumintrollet12.png" onclick="Fullview(this)" />
+				<input type="checkbox" class="checkbox" id="check12">
+				<button id="12" class="up-btn">
+					<i class="fa fa-edit"></i>
+				</button>
+				<div class="rate">
+					<input class="edit-star12" type="radio" id="star60" name="rate12" value="5" />
+					<label for="star60" title="text">5 stars</label>
+					<input class="edit-star12" type="radio" id="star59" name="rate12" value="4" />
+					<label for="star59" title="text">4 stars</label>
+					<input class="edit-star12" type="radio" id="star58" name="rate12" value="3" />
+					<label for="star58" title="text">3 stars</label>
+					<input class="edit-star12" type="radio" id="star57" name="rate12" value="2" />
+					<label for="star57" title="text">2 stars</label>
+					<input class="edit-star12" type="radio" id="star56" name="rate12" value="1" />
+					<label for="star56" title="text">1 star</label>
+					<div><span id="comment12" class="comment"></span></div>
+				</div>
+			</div>
+
+			<div class="album-flexbox">
+				<span id="title13" class="title"></span>
+				<img id="13" src="/img/mumintrollet13.png" onclick="Fullview(this)" />
+				<input type="checkbox" class="checkbox" id="check13">
+				<button id="13" class="up-btn">
+					<i class="fa fa-edit"></i>
+				</button>
+				<div class="rate">
+					<input class="edit-star13" type="radio" id="star65" name="rate13" value="5" />
+					<label for="star65" title="text">5 stars</label>
+					<input class="edit-star13" type="radio" id="star64" name="rate13" value="4" />
+					<label for="star64" title="text">4 stars</label>
+					<input class="edit-star13" type="radio" id="star63" name="rate13" value="3" />
+					<label for="star63" title="text">3 stars</label>
+					<input class="edit-star13" type="radio" id="star62" name="rate13" value="2" />
+					<label for="star62" title="text">2 stars</label>
+					<input class="edit-star13" type="radio" id="star61" name="rate13" value="1" />
+					<label for="star61" title="text">1 star</label>
+					<div><span id="comment13" class="comment"></span></div>
+				</div>
 			</div>
     
+			<div class="album-flexbox">
+				<span id="title14" class="title"></span>
+				<img id="14" src="/img/mumintrollet14.png" onclick="Fullview(this)" />
+				<input type="checkbox" class="checkbox" id="check14">
+				<button id="14" class="up-btn">
+					<i class="fa fa-edit"></i>
+				</button>
+				<div class="rate">
+					<input class="edit-star14" type="radio" id="star70" name="rate14" value="5" />
+					<label for="star70" title="text">5 stars</label>
+					<input class="edit-star14" type="radio" id="star69" name="rate14" value="4" />
+					<label for="star69" title="text">4 stars</label>
+					<input class="edit-star14" type="radio" id="star68" name="rate14" value="3" />
+					<label for="star68" title="text">3 stars</label>
+					<input class="edit-star14" type="radio" id="star67" name="rate14" value="2" />
+					<label for="star67" title="text">2 stars</label>
+					<input class="edit-star14" type="radio" id="star66" name="rate14" value="1" />
+					<label for="star66" title="text">1 star</label>
+					<div><span id="comment14" class="comment"></span></div>
+				</div>
+			</div>
+
+			<div class="album-flexbox">
+				<span id="title15" class="title"></span>
+				<img id="15" src="/img/mumintrollet15.png" onclick="Fullview(this)" />
+				<input type="checkbox" class="checkbox" id="check15">
+				<button id="15" class="up-btn">
+					<i class="fa fa-edit"></i>
+				</button>
+				<div class="rate">
+					<input class="edit-star15" type="radio" id="star75" name="rate15" value="5" />
+					<label for="star75" title="text">5 stars</label>
+					<input class="edit-star15" type="radio" id="star74" name="rate15" value="4" />
+					<label for="star74" title="text">4 stars</label>
+					<input class="edit-star15" type="radio" id="star73" name="rate15" value="3" />
+					<label for="star73" title="text">3 stars</label>
+					<input class="edit-star15" type="radio" id="star72" name="rate15" value="2" />
+					<label for="star72" title="text">2 stars</label>
+					<input class="edit-star15" type="radio" id="star71" name="rate15" value="1" />
+					<label for="star71" title="text">1 star</label>
+					<div><span id="comment15" class="comment"></span></div>
+				</div>
+			</div>
+
+			<div class="album-flexbox">
+				<span id="title16" class="title"></span>
+				<img id="16" src="/img/mumintrollet16.png" onclick="Fullview(this)" />
+				<input type="checkbox" class="checkbox" id="check16">
+				<button id="16" class="up-btn">
+					<i class="fa fa-edit"></i>
+				</button>
+				<div class="rate">
+					<input class="edit-star16" type="radio" id="star80" name="rate16" value="5" />
+					<label for="star80" title="text">5 stars</label>
+					<input class="edit-star16" type="radio" id="star79" name="rate16" value="4" />
+					<label for="star79" title="text">4 stars</label>
+					<input class="edit-star16" type="radio" id="star78" name="rate16" value="3" />
+					<label for="star78" title="text">3 stars</label>
+					<input class="edit-star16" type="radio" id="star77" name="rate16" value="2" />
+					<label for="star77" title="text">2 stars</label>
+					<input class="edit-star16" type="radio" id="star76" name="rate16" value="1" />
+					<label for="star76" title="text">1 star</label>
+					<div><span id="comment16" class="comment"></span></div>
+				</div>
+			</div>
+
+			<div class="album-flexbox">
+				<span id="title17" class="title"></span>
+				<img id="17" src="/img/mumintrollet17.png" onclick="Fullview(this)" />
+				<input type="checkbox" class="checkbox" id="check17">
+				<button id="17" class="up-btn">
+					<i class="fa fa-edit"></i>
+				</button>
+				<div class="rate">
+					<input class="edit-star17" type="radio" id="star85" name="rate17" value="5" />
+					<label for="star85" title="text">5 stars</label>
+					<input class="edit-star17" type="radio" id="star84" name="rate17" value="4" />
+					<label for="star84" title="text">4 stars</label>
+					<input class="edit-star17" type="radio" id="star83" name="rate17" value="3" />
+					<label for="star83" title="text">3 stars</label>
+					<input class="edit-star17" type="radio" id="star82" name="rate17" value="2" />
+					<label for="star82" title="text">2 stars</label>
+					<input class="edit-star17" type="radio" id="star81" name="rate17" value="1" />
+					<label for="star81" title="text">1 star</label>
+					<div><span id="comment17" class="comment"></span></div>
+				</div>
+			</div>
+
+			<div class="album-flexbox">
+				<span id="title18" class="title"></span>
+				<img id="18" src="/img/mumintrollet18.png" onclick="Fullview(this)" />
+				<input type="checkbox" class="checkbox" id="check18">
+				<button id="18" class="up-btn">
+					<i class="fa fa-edit"></i>
+				</button>
+				<div class="rate">
+					<input class="edit-star18" type="radio" id="star90" name="rate18" value="5" />
+					<label for="star90" title="text">5 stars</label>
+					<input class="edit-star18" type="radio" id="star89" name="rate18" value="4" />
+					<label for="star89" title="text">4 stars</label>
+					<input class="edit-star18" type="radio" id="star88" name="rate18" value="3" />
+					<label for="star88" title="text">3 stars</label>
+					<input class="edit-star18" type="radio" id="star87" name="rate18" value="2" />
+					<label for="star87" title="text">2 stars</label>
+					<input class="edit-star18" type="radio" id="star86" name="rate18" value="1" />
+					<label for="star86" title="text">1 star</label>
+					<div><span id="comment18" class="comment"></span></div>
+				</div>
+			</div>
+
+			<div class="album-flexbox">
+				<span id="title19" class="title"></span>
+				<img id="19" src="/img/mumintrollet19.png" onclick="Fullview(this)" />
+				<input type="checkbox" class="checkbox" id="check19">
+				<button id="19" class="up-btn">
+					<i class="fa fa-edit"></i>
+				</button>
+				<div class="rate">
+					<input class="edit-star19" type="radio" id="star95" name="rate19" value="5" />
+					<label for="star95" title="text">5 stars</label>
+					<input class="edit-star19" type="radio" id="star94" name="rate19" value="4" />
+					<label for="star94" title="text">4 stars</label>
+					<input class="edit-star19" type="radio" id="star93" name="rate19" value="3" />
+					<label for="star93" title="text">3 stars</label>
+					<input class="edit-star19" type="radio" id="star92" name="rate19" value="2" />
+					<label for="star92" title="text">2 stars</label>
+					<input class="edit-star19" type="radio" id="star91" name="rate19" value="1" />
+					<label for="star91" title="text">1 star</label>
+					<div><span id="comment19" class="comment"></span></div>
+				</div>
+			</div>
+
+			<div class="album-flexbox">
+				<span id="title20" class="title"></span>
+				<img id="20" src="/img/mumintrollet20.png" onclick="Fullview(this)" />
+				<input type="checkbox" class="checkbox" id="check20">
+				<button id="20" class="up-btn">
+					<i class="fa fa-edit"></i>
+				</button>
+				<div class="rate">
+					<input class="edit-star20" type="radio" id="star100" name="rate20" value="5" />
+					<label for="star100" title="text">5 stars</label>
+					<input class="edit-star20" type="radio" id="star99" name="rate20" value="4" />
+					<label for="star99" title="text">4 stars</label>
+					<input class="edit-star20" type="radio" id="star98" name="rate20" value="3" />
+					<label for="star98" title="text">3 stars</label>
+					<input class="edit-star20" type="radio" id="star97" name="rate20" value="2" />
+					<label for="star97" title="text">2 stars</label>
+					<input class="edit-star20" type="radio" id="star96" name="rate20" value="1" />
+					<label for="star96" title="text">1 star</label>
+					<div><span id="comment20" class="comment"></span></div>
+				</div>
+			</div>
+
+			<div class="album-flexbox">
+				<span id="title21" class="title"></span>
+				<img id="21" src="/img/mumintrollet21.png" onclick="Fullview(this)" />
+				<input type="checkbox" class="checkbox" id="check21">
+				<button id="21" class="up-btn">
+					<i class="fa fa-edit"></i>
+				</button>
+				<div class="rate">
+					<input class="edit-star21" type="radio" id="star105" name="rate21" value="5" />
+					<label for="star105" title="text">5 stars</label>
+					<input class="edit-star21" type="radio" id="star104" name="rate21" value="4" />
+					<label for="star104" title="text">4 stars</label>
+					<input class="edit-star21" type="radio" id="star103" name="rate21" value="3" />
+					<label for="star103" title="text">3 stars</label>
+					<input class="edit-star21" type="radio" id="star102" name="rate21" value="2" />
+					<label for="star102" title="text">2 stars</label>
+					<input class="edit-star21" type="radio" id="star101" name="rate21" value="1" />
+					<label for="star101" title="text">1 star</label>
+					<div><span id="comment21" class="comment"></span></div>
+				</div>
+			</div>
+
+			<div class="album-flexbox">
+				<span id="title22" class="title"></span>
+				<img id="22" src="/img/mumintrollet22.png" onclick="Fullview(this)" />
+				<input type="checkbox" class="checkbox" id="check22">
+				<button id="22" class="up-btn">
+					<i class="fa fa-edit"></i>
+				</button>
+				<div class="rate">
+					<input class="edit-star22" type="radio" id="star110" name="rate22" value="5" />
+					<label for="star110" title="text">5 stars</label>
+					<input class="edit-star22" type="radio" id="star109" name="rate22" value="4" />
+					<label for="star109" title="text">4 stars</label>
+					<input class="edit-star22" type="radio" id="star108" name="rate22" value="3" />
+					<label for="star108" title="text">3 stars</label>
+					<input class="edit-star22" type="radio" id="star107" name="rate22" value="2" />
+					<label for="star107" title="text">2 stars</label>
+					<input class="edit-star22" type="radio" id="star106" name="rate22" value="1" />
+					<label for="star106" title="text">1 star</label>
+					<div><span id="comment22" class="comment"></span></div>
+				</div>
+			</div>
+
+			<div class="album-flexbox">
+				<span id="title23" class="title"></span>
+				<img id="23" src="/img/mumintrollet23.png" onclick="Fullview(this)" />
+				<input type="checkbox" class="checkbox" id="check23">
+				<button id="23" class="up-btn">
+					<i class="fa fa-edit"></i>
+				</button>
+				<div class="rate">
+					<input class="edit-star23" type="radio" id="star115" name="rate23" value="5" />
+					<label for="star115" title="text">5 stars</label>
+					<input class="edit-star23" type="radio" id="star114" name="rate23" value="4" />
+					<label for="star114" title="text">4 stars</label>
+					<input class="edit-star23" type="radio" id="star113" name="rate23" value="3" />
+					<label for="star113" title="text">3 stars</label>
+					<input class="edit-star23" type="radio" id="star112" name="rate23" value="2" />
+					<label for="star112" title="text">2 stars</label>
+					<input class="edit-star23" type="radio" id="star111" name="rate23" value="1" />
+					<label for="star111" title="text">1 star</label>
+					<div><span id="comment23" class="comment"></span></div>
+				</div>
+			</div>
+
+			<div class="album-flexbox">
+				<span id="title24" class="title"></span>
+				<img id="24" src="/img/mumintrollet24.png" onclick="Fullview(this)" />
+				<input type="checkbox" class="checkbox" id="check24">
+				<button id="24" class="up-btn">
+					<i class="fa fa-edit"></i>
+				</button>
+				<div class="rate">
+					<input class="edit-star24" type="radio" id="star120" name="rate24" value="5" />
+					<label for="star120" title="text">5 stars</label>
+					<input class="edit-star24" type="radio" id="star119" name="rate24" value="4" />
+					<label for="star119" title="text">4 stars</label>
+					<input class="edit-star24" type="radio" id="star118" name="rate24" value="3" />
+					<label for="star118" title="text">3 stars</label>
+					<input class="edit-star24" type="radio" id="star117" name="rate24" value="2" />
+					<label for="star117" title="text">2 stars</label>
+					<input class="edit-star24" type="radio" id="star116" name="rate24" value="1" />
+					<label for="star116" title="text">1 star</label>
+					<div><span id="comment24" class="comment"></span></div>
+				</div>
+			</div>
+
+			<div class="album-flexbox">
+				<span id="title25" class="title"></span>
+				<img id="25" src="/img/mumintrollet25.png" onclick="Fullview(this)" />
+				<input type="checkbox" class="checkbox" id="check25">
+				<button id="25" class="up-btn">
+					<i class="fa fa-edit"></i>
+				</button>
+				<div class="rate">
+					<input class="edit-star25" type="radio" id="star125" name="rate25" value="5" />
+					<label for="star125" title="text">5 stars</label>
+					<input class="edit-star25" type="radio" id="star124" name="rate25" value="4" />
+					<label for="star124" title="text">4 stars</label>
+					<input class="edit-star25" type="radio" id="star123" name="rate25" value="3" />
+					<label for="star123" title="text">3 stars</label>
+					<input class="edit-star25" type="radio" id="star122" name="rate25" value="2" />
+					<label for="star122" title="text">2 stars</label>
+					<input class="edit-star25" type="radio" id="star121" name="rate25" value="1" />
+					<label for="star121" title="text">1 star</label>
+					<div><span id="comment25" class="comment"></span></div>
+				</div>
+			</div>
 
 			<div id="FullImageView">
-				<img id="FullImage" />
+				<div>
+					<span id="full-title"></span>
+				</div>
+				<div id="stars-full-view">
+					<img id="FullImage" />
+				</div>
+				<div id="full-rate" class="rate">
+					<input
+						disabled
+						class="edit-star5"
+						type="radio"
+						id="star05"
+						name="rate0"
+						value="5"
+					/>
+					<label for="star05" title="text">5 stars</label>
+					<input
+						disabled
+						class="edit-star5"
+						type="radio"
+						id="star04"
+						name="rate0"
+						value="4"
+					/>
+					<label for="star04" title="text">4 stars</label>
+					<input
+						disabled
+						class="edit-star5"
+						type="radio"
+						id="star03"
+						name="rate0"
+						value="3"
+					/>
+					<label for="star03" title="text">3 stars</label>
+					<input
+						disabled
+						class="edit-star5"
+						type="radio"
+						id="star02"
+						name="rate0"
+						value="2"
+					/>
+					<label for="star02" title="text">2 stars</label>
+					<input
+						disabled
+						class="edit-star5"
+						type="radio"
+						id="star01"
+						name="rate0"
+						value="1"
+					/>
+					<label for="star01" title="text">1 star</label>
+				</div>
+				
+				<div>
+					<span id="full-comment"></span>
+				</div>
+				
 				<span id="CloseButton" onclick="CloseFullView()">&times;</span>
 			</div>
 
@@ -209,5 +799,9 @@
 		</div>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 		<script src="../javascript/modal.js"></script>
+		<script src="/javascript/slideShow-enable.js"></script>
+		<script src="/javascript/threeDot.js"></script>
+		
+
 	</body>
 </html>
