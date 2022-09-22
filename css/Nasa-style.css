@@ -82,7 +82,10 @@ p {
 }
 .album-flexbox {
 	position: relative;
-	height: 258px;
+	max-height: 300px;
+	max-width: 300px;
+	min-height: 300px;
+	min-width: 300px;
 	border-radius: 10px;
 	box-shadow: 3px 3px 5px rgb(148, 42, 42);
 	cursor: pointer;
@@ -110,7 +113,7 @@ p {
 
 @media (max-width: 1080px) {
 	.album-flexbox-holder {
-		grid-template-columns: repeat(auto-fill, minmax(258px, 1fr));
+		grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 	}
 }
 .album-flexbox .btn {
@@ -226,12 +229,11 @@ form .form_btn:hover {
  } 
  #full-rate{
 	position: relative;
-	left: 20%;
+	
  }
- #full-comment { 
+ #full-comment{ 
 	position: relative;
-	top: -20px;
-	right: 250px;
+	text-align: center;
 	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 	color: #f7c08a;
 	background-color: #333;
