@@ -209,8 +209,9 @@ form .form_btn:hover {
 	cursor: auto;
 } 
 .comment{ 
+	position: relative;
 	text-align: center;
-	cursor: auto;
+	cursor: default;
 	color: #f7c08a;
  }
 
@@ -230,7 +231,7 @@ form .form_btn:hover {
  #full-comment { 
 	position: relative;
 	top: -20px;
-	text-align: center;
+	right: 250px;
 	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 	color: #f7c08a;
 	background-color: #333;
