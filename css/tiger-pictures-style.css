@@ -106,10 +106,7 @@ p {
 
 }
 
-.title {
-	position: absolute;
-	top: -20px;
-}
+
 
 @media (max-width: 1080px) {
 	.album-flexbox-holder {
@@ -134,7 +131,7 @@ p {
 	background-color: rgba(51, 51, 51, 0.801);
 }
 #FullImage {
-	padding: 24px;
+	
 	max-width: 100%;
 	max-height: 100%;
 }
@@ -206,6 +203,7 @@ form .form_btn:hover {
   opacity: 1;
  }
 .title{
+	position: absolute;
 	color: #f7c08a;
 	top: -30px;
 	font-size: 25px;
@@ -220,7 +218,6 @@ form .form_btn:hover {
 
  #full-title{
 	position: relative;
-	top: 20px;
 	font-size: 30px;
 	text-align: center;
 	background-color: #333;
@@ -229,6 +226,7 @@ form .form_btn:hover {
  } 
  #full-rate{
 	position: relative;
+	
 	
  }
  #full-comment{ 
@@ -245,10 +243,6 @@ form .form_btn:hover {
 	background-color: #f7c08a;
 	cursor: pointer;
  }
-.slideshowButtons{
-	position: relative;
-	text-align: center;
-}
 .clearButton{
 	padding: 10px;
 	background-color: #f7c08a;
@@ -257,8 +251,17 @@ form .form_btn:hover {
 	text-align: center;
 	width: 160px;
  }
+ .slideContainer{
+	position: relative;
+	text-align: center;
+ }
+ .slideshowButtons{
+	position: relative;
+	text-align: center;
+}
  .slideshow{
-	width: 50%;
+	position: relative;
+	width: 40%;
 	margin-left: auto;
     margin-right: auto;
  }
