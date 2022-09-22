@@ -28,105 +28,104 @@ function switchOnId(id){
     const idd = id;
     switch(idd){
         case "check1":
-        console.log("img1");
-        listArray.push(document.getElementById("img1"));
+        listArray.push(document.getElementById("1"));
         
         break;
         
         case "check2":
-        listArray.push(document.getElementById("img2"));
+        listArray.push(document.getElementById("2"));
         break;
         
         case "check3":
-        listArray.push(document.getElementById("img3"));
+        listArray.push(document.getElementById("3"));
         break;
 
         case "check4":
-        listArray.push(document.getElementById("img4"));
+        listArray.push(document.getElementById("4"));
         break;
 
         case "check5":
-        listArray.push(document.getElementById("img5"));
+        listArray.push(document.getElementById("5"));
         break;
 
         case "check6":
-        listArray.push(document.getElementById("img6"));
+        listArray.push(document.getElementById("6"));
         break;
 
         case "check7":
-        listArray.push(document.getElementById("img7"));
+        listArray.push(document.getElementById("7"));
         break;
         
         case "check8":
-        listArray.push(document.getElementById("img8"));
+        listArray.push(document.getElementById("8"));
         break;
 
         case "check9":
-        listArray.push(document.getElementById("img9"));
+        listArray.push(document.getElementById("9"));
         break;
         
         case "check10":
-        listArray.push(document.getElementById("img10"));
+        listArray.push(document.getElementById("10"));
         break;
         
         case "check11":
-        listArray.push(document.getElementById("img11"));
+        listArray.push(document.getElementById("11"));
         break;
         
         case "check12":
-        listArray.push(document.getElementById("img12"));
+        listArray.push(document.getElementById("12"));
         break;
         
         case "check13":
-        listArray.push(document.getElementById("img13"));
+        listArray.push(document.getElementById("13"));
         break;
         
         case "check14":
-        listArray.push(document.getElementById("img14"));
+        listArray.push(document.getElementById("14"));
         break;
         
         case "check15":
-        listArray.push(document.getElementById("img15"));
+        listArray.push(document.getElementById("15"));
         break;
         
         case "check16":
-        listArray.push(document.getElementById("img16"));
+        listArray.push(document.getElementById("16"));
         break;
         
         case "check17":
-        listArray.push(document.getElementById("img17"));
+        listArray.push(document.getElementById("17"));
         break;
         
         case "check18":
-        listArray.push(document.getElementById("img18"));
+        listArray.push(document.getElementById("18"));
         break;
         
         case "check19":
-        listArray.push(document.getElementById("img19"));
+        listArray.push(document.getElementById("19"));
         break;
         
         case "check20":
-        listArray.push(document.getElementById("img20"));
+        listArray.push(document.getElementById("20"));
         break;
         
         case "check21":
-        listArray.push(document.getElementById("img21"));
+        listArray.push(document.getElementById("21"));
         break;
         
         case "check22":
-        listArray.push(document.getElementById("img22"));
+        listArray.push(document.getElementById("22"));
         break;
         
         case "check23":
-        listArray.push(document.getElementById("img23"));
+        listArray.push(document.getElementById("23"));
         break;
         
         case "check24":
-        listArray.push(document.getElementById("img24"));
+        listArray.push(document.getElementById("24"));
         break;
         
         case "check25":
-        listArray.push(document.getElementById("img25"));
+        listArray.push(document.getElementById("25"));
         break;
         
         

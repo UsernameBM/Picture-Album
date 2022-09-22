@@ -1,10 +1,15 @@
 function Fullview(ImgLink) {
 	// Hitta ID för titel, kommentar och betyg som jag behöver för att visa på hela bilden
-	let num = ImgLink.id.slice(-1);
+	//let num = ImgLink.id.slice(-1);
+	let num = ImgLink.id;
 	let titleId = 'title' + num;
 	let commentId = 'comment' + num;
 	let rateId = 'rate' + num;
 
+	let checkboxes = document.querySelectorAll('.checkbox');
+	for(let checkbox of checkboxes){
+    checkbox.style.visibility = 'hidden';
+	}
 	// Ställa in titel, kommentar och betyg för full bildvy
 	$('#full-title').html($('#' + titleId)[0].innerHTML);
 	$('#full-comment').html($('#' + commentId)[0].innerHTML);
@@ -20,6 +25,10 @@ function Fullview(ImgLink) {
 }
 function CloseFullView() {
 	document.getElementById('FullImageView').style.display = 'none';
+	let checkboxes = document.querySelectorAll('.checkbox');
+	for(let checkbox of checkboxes){
+		checkbox.style.visibility = 'visible';
+	}
 }
 $(document).ready(function () {
 	const modal = document.getElementById('simple-modal');
@@ -38,6 +47,28 @@ $(document).ready(function () {
 	$('.edit-star2').click(starClicked);
 	$('.edit-star3').click(starClicked);
 	$('.edit-star4').click(starClicked);
+	$('.edit-star5').click(starClicked);
+	$('.edit-star6').click(starClicked);
+	$('.edit-star7').click(starClicked);
+	$('.edit-star8').click(starClicked);
+	$('.edit-star9').click(starClicked);
+	$('.edit-star10').click(starClicked);
+	$('.edit-star11').click(starClicked);
+	$('.edit-star12').click(starClicked);
+	$('.edit-star13').click(starClicked);
+	$('.edit-star14').click(starClicked);
+	$('.edit-star15').click(starClicked);
+	$('.edit-star16').click(starClicked);
+	$('.edit-star17').click(starClicked);
+	$('.edit-star18').click(starClicked);
+	$('.edit-star19').click(starClicked);
+	$('.edit-star20').click(starClicked);
+	$('.edit-star21').click(starClicked);
+	$('.edit-star22').click(starClicked);
+	$('.edit-star23').click(starClicked);
+	$('.edit-star24').click(starClicked);
+	$('.edit-star25').click(starClicked);
+	
 	
 
 	function starClicked(event) {
@@ -66,79 +97,79 @@ $(document).ready(function () {
 		var titleDisplay = null;
 		var commentDisplay = null;
 		console.log(modalOpen);
-		if (modalOpen == 'modalbtn1') {
+		if (modalOpen == '1') {
 			titleDisplay = $('#title1');
 			commentDisplay = $('#comment1');
-		} else if (modalOpen == 'modalbtn2') {
+		} else if (modalOpen == '2') {
 			titleDisplay = $('#title2');
 			commentDisplay = $('#comment2');
-		} else if (modalOpen == 'modalbtn3') {
+		} else if (modalOpen == '3') {
 			titleDisplay = $('#title3');
 			commentDisplay = $('#comment3');
-		} else if (modalOpen == 'modalbtn4') {
+		} else if (modalOpen == '4') {
 			titleDisplay = $('#title4');
 			commentDisplay = $('#comment4');
-		} else if (modalOpen == 'modalbtn5') {
+		} else if (modalOpen == '5') {
 			titleDisplay = $('#title5');
 			commentDisplay = $('#comment5');
-		} else if (modalOpen == 'modalbtn6') {
+		} else if (modalOpen == '6') {
 			titleDisplay = $('#title6');
 			commentDisplay = $('#comment6');
-		} else if (modalOpen == 'modalbtn7') {
+		} else if (modalOpen == '7') {
 			titleDisplay = $('#title7');
 			commentDisplay = $('#comment7');
-		} else if (modalOpen == 'modalbtn8') {
+		} else if (modalOpen == '8') {
 			titleDisplay = $('#title8');
 			commentDisplay = $('#comment8');
-		} else if (modalOpen == 'modalbtn9') {
+		} else if (modalOpen == '9') {
 			titleDisplay = $('#title9');
 			commentDisplay = $('#comment9');
-		} else if (modalOpen == 'modalbtn10') {
+		} else if (modalOpen == '10') {
 			titleDisplay = $('#title10');
 			commentDisplay = $('#comment10');
-		} else if (modalOpen == 'modalbtn11') {
+		} else if (modalOpen == '11') {
 			titleDisplay = $('#title11');
 			commentDisplay = $('#comment11');
-		} else if (modalOpen == 'modalbtn12') {
+		} else if (modalOpen == '12') {
 			titleDisplay = $('#title12');
 			commentDisplay = $('#comment12');
-		} else if (modalOpen == 'modalbtn13') {
+		} else if (modalOpen == '13') {
 			titleDisplay = $('#title13');
 			commentDisplay = $('#comment13');
-		} else if (modalOpen == 'modalbtn14') {
+		} else if (modalOpen == '14') {
 			titleDisplay = $('#title14');
 			commentDisplay = $('#comment14');
-		} else if (modalOpen == 'modalbtn15') {
+		} else if (modalOpen == '15') {
 			titleDisplay = $('#title15');
 			commentDisplay = $('#comment15');
-		} else if (modalOpen == 'modalbtn16') {
+		} else if (modalOpen == '16') {
 			titleDisplay = $('#title16');
 			commentDisplay = $('#comment16');
-		} else if (modalOpen == 'modalbtn17') {
+		} else if (modalOpen == '17') {
 			titleDisplay = $('#title17');
 			commentDisplay = $('#comment17');
-		} else if (modalOpen == 'modalbtn18') {
+		} else if (modalOpen == '18') {
 			titleDisplay = $('#title18');
 			commentDisplay = $('#comment18');
-		} else if (modalOpen == 'modalbtn19') {
+		} else if (modalOpen == '19') {
 			titleDisplay = $('#title19');
 			commentDisplay = $('#comment19');
-		} else if (modalOpen == 'modalbtn20') {
+		} else if (modalOpen == '20') {
 			titleDisplay = $('#title20');
 			commentDisplay = $('#comment20');
-		} else if (modalOpen == 'modalbtn21') {
+		} else if (modalOpen == '21') {
 			titleDisplay = $('#title21');
 			commentDisplay = $('#comment21');
-		} else if (modalOpen == 'modalbtn22') {
+		} else if (modalOpen == '22') {
 			titleDisplay = $('#title22');
 			commentDisplay = $('#comment22');
-		} else if (modalOpen == 'modalbtn23') {
+		} else if (modalOpen == '23') {
 			titleDisplay = $('#title23');
 			commentDisplay = $('#comment23');
-		} else if (modalOpen == 'modalbtn24') {
+		} else if (modalOpen == '24') {
 			titleDisplay = $('#title24');
 			commentDisplay = $('#comment24');
-		} else if (modalOpen == 'modalbtn25') {
+		} else if (modalOpen == '25') {
 			titleDisplay = $('#title25');
 			commentDisplay = $('#comment25');
 		}
@@ -146,7 +177,7 @@ $(document).ready(function () {
 		var keyComment = '';
 
 		// Namnge titeln och kommentarsnycklarna från händelsen sparad i modalOpen
-		var num = modalOpen.slice(-1);
+		var num = modalOpen;
 		keyTitle = 'title' + num;
 		keyComment = 'comment' + num;
 
