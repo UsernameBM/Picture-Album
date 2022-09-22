@@ -10,7 +10,7 @@ body {
 	line-height: 1.7em;
 }
 a {
-	color: #333;
+	color: rgb(247, 26, 26);
 	text-decoration: none;
 }
 h1,
@@ -215,9 +215,8 @@ form .form_btn:hover {
 	color: white !important; 
 }
 #full-rate{
-	
-
-
-
+	position: relative;
+	top: 90%;
+    left:50%;
 		
 }
