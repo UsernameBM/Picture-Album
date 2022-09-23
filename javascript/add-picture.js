@@ -1,6 +1,6 @@
 var input = document.querySelector('input');
 var albumHolder = document.querySelector('.album-flexbox-holder');
-
+var stringFile = "";
 //input.style.opacity = 0;
 input.addEventListener('change', createPictureList);
 
@@ -18,9 +18,7 @@ function createPictureList() {
       albumHolder.appendChild(paragraph);
     } else {
      
-      let counter = localStorage.length;
-      console.log(counter);
-
+      counter = 0;
       for (const file of currentFiles) {
         const reader = new FileReader();
         let divElement = document.createElement("div");
@@ -32,15 +30,36 @@ function createPictureList() {
 
         reader.readAsDataURL(file);
         reader.onloadend = () => {
-        image.src = reader.result; 
-        localStorage.setItem(counter, reader.result); 
-        counter++;
+        image.src = reader.result;
+        stringFile += image.src;
+        console.log(stringFile);
+        let name = file.name;
+        setStorage(stringFile);
         divElement.appendChild(image);
         divElement.appendChild(paragraph);
         albumHolder.appendChild(divElement);
+        
         };
+        counter++;
       }
+      
     }
+  }
+  function setStorage(string){
+    if(localStorage.getItem('pictures') != null){
+    let sumString = localStorage.getItem('pictures');
+    sumString += "-"+string;
+    localStorage.setItem('pictures', sumString);
+    }else localStorage.setItem('pictures', string);
+  }
+  async function saveImg(imageSrc){
+    fetch('/save', {
+      method:'POST',
+      headers: {'Accept': 'image/png, image/jpeg'},
+      body: imageSrc
+    })
+    .then((res) => res)
+    .then((data) => console.log(data))
   }
   function returnFileSize(number) {
     if(number < 1024) {

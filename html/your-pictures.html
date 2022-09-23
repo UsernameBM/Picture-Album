@@ -45,15 +45,10 @@
       </div>
           <div class="album-flexbox-holder" id="album-flexbox-holder">
             <div class="album-flexbox">
-            <form method="post" enctype="multipart/form-data">
+            <form action='http://localhost:57904/save' method="post" enctype="multipart/form-data">
             <div>
-            <input type="file" name="file" id="file" class="btn" accept="image/png, image/jpeg" multiple></input>
-          </div>
-          <div class="preview">
-            <p>No files currently selected for upload</p>
-          </div>
-          <div>
-            <button>Submit</button>
+            <input type="file" name="file" id="file" class="btn" accept="image/png, image/jpeg" multiple/>
+            <input type="submit" class="btn"/>
           </div>
           </form>
           </div>
