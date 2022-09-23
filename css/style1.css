@@ -115,8 +115,16 @@ p {
 	position: relative;
 }
 
+
 .album-flexbox img:hover {
 	filter: brightness(70%);
+	
+}
+.albumTitle{
+	top: -40px;
+	position: relative;
+	text-align: center;
+	color: #f7c08a;
 }
 
 .title {
@@ -216,3 +224,6 @@ form .form_btn:hover {
 }
 .title, .comment
  { margin-left: 40px; }
+ #tigerCover{
+	position:absolute;
+ }

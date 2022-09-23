@@ -5,7 +5,7 @@ function newAlbum(){
     divElement.className='album-flexbox';
     let imgElement = document.createElement("img");
     imgElement.className='img';
-    imgElement.src = "/img/ailbhe-flynn-jkZs3Oi9pq0-unsplash.jpg";
+    imgElement.src = "/img/camera.png";
     
     arrayForElements = [];
         
